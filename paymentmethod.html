@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Grotesk font -->
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Karcis</title>
+</head>
+<body>
+    <header class="header">
+        <h4 class="nav-title-text">Karcis.com</h4>
+        <ul class="nav-list">
+            <li><a href="#">Concerts</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Confrence</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">International</a></li>
+        </ul>
+        <div class="btn">
+            <button class="nav-btn" id="log-in">Log In</button>
+            <button class="nav-btn" id="sign-up">Sign up</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="ticket-div-title">
+                <button class="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+                <h3>Payment Method</h3>
+            </div>
+            <div class="checkout-container">
+                <div class="left-items">
+                    <!-- Credit Cards -->
+                    <h5>Credit Card</h5>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="credit-card" value="credit-card">
+                        <label for="credit-card">Credit/Debit Card</label>
+                    </div>
+                    <!-- Virtual Accounts -->
+                    <h5>Virtual Account</h5>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="bca-vit" value="bca-vit">
+                        <label for="bca-vit">BCA Virtual Account</label>
+                        <img src="./Assets/paymentIcons/bca.png" alt="BCA">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="bni-vit" value="bni-vit">
+                        <label for="bni-vit">BNI Virtual Account</label>
+                        <img src="./Assets/paymentIcons/bni.png" alt="BCA">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="mandiri-vit" value="mandiri-vit">
+                        <label for="mandiri-vit">Mandiri Virtual Account</label>
+                        <img src="./Assets/paymentIcons/mandiri.png" alt="Mandiri">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="other-banks" value="other-banks">
+                        <label for="other-banks">Other Banks</label>
+                        <img src="./Assets/paymentIcons/bca.png" alt="Other Banks">
+                    </div>
+                    <!-- Electronic Money -->
+                    <h4>Electronic Money</h4>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="gopay" value="gopay">
+                        <label for="gopay">Gopay</label>
+                        <img src="./Assets/paymentIcons/gopay.png" alt="Gopay">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="ovo" value="ovo">
+                        <label for="ovo">Ovo</label>
+                        <img src="./Assets/paymentIcons/ovo.png" alt="Ovo">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="linkaja" value="linkaja">
+                        <label for="linkaja">LinkAja</label>
+                        <img src="./Assets/paymentIcons/linkaja.png" alt="LinkAja">
+                    </div>
+                    <div class="payment-divs">
+                        <input type="radio" name="payment" id="shopee-pay" value="shopee-pay">
+                        <label for="shopee-pay">Shopee pay</label>
+                        <img src="./Assets/paymentIcons/shopeepay.png" alt="Shopee pay">
+                    </div>
+                </div>
+
+                <div class="right-items">
+                    <div class="checkout-event">
+                        <h4>Event Details</h4>
+                        <div class="img-description">
+                            <img src="./Assets/senja-ticket.png" alt="Senja">
+                            <div class="text-desc">
+                                <h5>Drive In Senja: Back to The Future</h5>
+                                <p><small><i class="fa-solid fa-location-dot"></i>Parkiran Utama Mall @ Alam Sutera</small></p>
+                                <p><small><i class="fa-solid fa-calendar-days"></i>September 22, 2021 · 20.00 - 21.56 WIB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-order-sum">
+                        <h4>Order Summary</h4>
+                        <div class="order-price">
+                            <p>Ticket type <span class="align-right" id="ticket-type">2 x Paket VIP</span></p>
+                        </div>
+                        <div class="order-price">
+                            <p>Ticket price <span class="align-right" id="ticket-price">2 x Rp. 371.000</span></p>
+                            <p>Service & Handling <span class="align-right" id="service-handling">-</span></p>
+                            <p>Admin Fee <span class="align-right" id="admin-fee">-</span></p>
+                        </div>
+                        <div class="total">
+                            <p>Total <span class="align-right" id="total">Rp. 742.000</span></p>
+                        </div>
+                        <div>
+                            <button class="btn-payment" id="pay-now">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
