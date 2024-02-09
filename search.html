@@ -15,7 +15,7 @@
     <!-- Nav Bar -->
     <header class="header">
         <h4 class="nav-title-text">Karcis.com</h4>
-        <div class="search">
+        <div class="nav-search search">
             <input type="text" id="search-event" placeholder="Search by events, name, location, and more">
             <input type="date" id="search-date" placeholder="Select date">
             <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -24,7 +24,19 @@
             <button class="nav-btn" id="log-in">Log In</button>
             <button class="nav-btn" id="sign-up">Sign up</button>
         </div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
+    <div class="dropdown-list">
+        <div class="logo">
+            <i class="fa-solid fa-xmark" id="close-side-bar"></i>
+        </div>
+        <div class="btn">
+            <button class="nav-btn" id="log-in">Log In</button>
+            <button class="nav-btn" id="sign-up">Sign up</button>
+        </div>
+    </div>
     <main class="search-main">
         <!-- Side Bar -->
         <div class="side-bar">
@@ -34,14 +46,14 @@
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
-                    <p>Online</p>
                 </label>
+                    <p>Online</p>
             </div>
             <hr>
             <!-- Location -->
             <div class="location">
                 <div class="filter-heading">
-                    <h6>Location</h6>
+                    <h5>Location</h5>
                     <div>
                         <i class="angleDown fa-solid fa-angle-down" id="angleDown"></i>
                     </div>
@@ -73,7 +85,7 @@
             <!-- Categories -->
             <div class="categories">
                 <div class="filter-heading">
-                    <h6>Categories</h6>
+                    <h5>Categories</h5>
                     <div>
                         <i class="angleDown fa-solid fa-angle-down" id="angleDown"></i>
                     </div>
@@ -115,9 +127,15 @@
                 </div>
             </div>
         </div>
+        <!-- Search field for small Screens only -->
+        <div class="body-search search">
+            <input type="text" id="search-event" placeholder="Search by events, name, location, and more">
+            <input type="date" id="search-date" placeholder="Select date">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </div>
         <!-- Search Display -->
         <div class="search-display" id="search-display">
-            <p>search result for</p>
+            <p id="search-result">search result for</p>
             <div class="display-container" id="display-container"></div>
         </div>
     </main>
